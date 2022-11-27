@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+.contanier {
+  border: 1px solid transparent;
+  background-color: orangered;
+  max-width: 450px;
+  border-radius: 6px;
+  margin: 50px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.header {
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+.name {
+  margin: 10px;
+  padding: 3px;
+  padding-left: 25px;
+}
+
+.name input {
+  background-color: orangered;
+  outline: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  border-style: none none solid;
+  width: 80%;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.wages {
+  margin: 10px;
+  padding: 3px;
+  padding-left: 25px;
+  margin-top: 4px;
+}
+
+.wages input {
+  background-color: orangered;
+  outline: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  border-style: none none solid;
+  width: 80%;
+  color: white;
+}
+
+.tax {
+  margin: 10px;
+  padding: 3px;
+  padding-left: 25px;
+  margin-top: 4px;
+}
+
+.tax input {
+  background-color: orangered;
+  outline: none;
+  padding-bottom: 10px;
+  border-bottom: 1px solid white;
+  border-style: none none solid;
+  width: 80%;
+  color: white;
+}
+
+.button {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+#naja {
+  border: none;
+  background: white;
+  color: orangered;
+  font-size: 15px;
+  font-weight: bold;
+  width: 22%;
+  border-radius: 15px;
+}
+
+#demo,
+#pergjigje {
+  color: white;
+  margin-right: 5px;
+}
+
+.answer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* per te hequr shenjen qe del kur kemi input number */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* this means that the ruls added inside this block will work when the screen size is lower than 600 px*/
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: red;
+  }
+  .contanier {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+/* this means that the ruls added inside this block will work when the screen size is lower than 600 px*/
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-color: green;
+  }
+}
